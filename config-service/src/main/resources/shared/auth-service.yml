@@ -1,0 +1,13 @@
+spring:
+  data:
+    postresql:
+      host: auth-mongodb
+      username: user
+      password: ${POSTGRESQL_PASSWORD}
+      database: microservices
+      port: 27017
+
+server:
+  servlet:
+    context-path: /uaa
+  port: 5000
